@@ -18,3 +18,56 @@ header nav .navbar-collapse .navbar-nav{
     padding: 0;
     width: 100%;
 }
+.lineas-productos {
+    background: linear-gradient(to bottom, #797371, #555050);
+    padding: 2vw 0;
+    text-align: center;
+}
+
+.lineas-productos .btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.lineas-productos .btn-group .btn {
+    padding: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem; 
+    border-radius: 20px !important;
+    margin: 1vw; 
+    color: #000000; 
+    border: none; 
+    background-color: #ebe2e2; 
+    width: calc(50% - 14px); 
+    max-width: 200px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    text-transform: uppercase; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.lineas-productos .btn-group .btn:hover {
+    background-color: #d8b389;
+    color: #ffffff; 
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .lineas-productos .btn-group .btn {
+        width: calc(50% - 2vw);
+        font-size: 0.8rem;
+        padding: 1.5vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .lineas-productos .btn-group .btn {
+        width: calc(100% - 2vw);
+        font-size: 0.7rem; 
+        padding: 1vw; 
+    }
+}
